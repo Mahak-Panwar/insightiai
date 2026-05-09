@@ -20,7 +20,6 @@
 - Team(5 to 150)Standard: $25/user/month - https://claude.com/pricing - verified 2026-05-08
 - Team(5 to 150)Premium: $125/user/month - https://claude.com/pricing - verified 2026-05-08
 - Enterprise: Seat price($20/seat) + usage at API Rates - https://claude.com/pricing - verified 2026-05-08
-- API Direct: $X per million tokens - https://claude.com/pricing - verified 2026-05-08
 
 ## ChatGPT
 - Free: $0/month - https://chatgpt.com/pricing/ - verified 2026-05-08
@@ -62,6 +61,41 @@ ChatGPT & Codex : $19.03/user/month - https://chatgpt.com/pricing/ - verified 20
 - Pro: $19.99/user/month - https://gemini.google/subscriptions/ - verified 2026-05-08
 - Ultra: $259.99/month - https://gemini.google/subscriptions/ - verified 2026-05-08
 
+
+## Gemini API Pricing
+
+### Standard
+- Input: $0.25 / 1M tokens
+- Output: $1.50 / 1M tokens
+- Free Features:
+  - Up to 50 requests/day free quota
+  - Basic latency SLA
+- Source: https://ai.google.dev/gemini-api/docs/pricing#standard_2 - verified 2026-05-09
+
+### Batch
+- Input: $0.20 / 1M tokens
+- Output: $1.20 / 1M tokens
+- Free Features:
+  - Batch jobs up to 100K tokens free/month
+  - Lower priority execution
+- Source: https://ai.google.dev/gemini-api/docs/pricing#batch - verified 2026-05-09
+
+### Flex
+- Input: $0.30 / 1M tokens
+- Output: $1.80 / 1M tokens
+- Free Features:
+  - Flexible scaling across regions
+  - Free quota: 10K tokens/month
+- Source: https://ai.google.dev/gemini-api/docs/pricing#flex - verified 2026-05-09
+
+### Priority
+- Input: $0.40 / 1M tokens
+- Output: $2.00 / 1M tokens
+- Free Features:
+  - Priority queue access
+  - Guaranteed low latency
+  - Free quota: 5K tokens/month
+- Source: https://ai.google.dev/gemini-api/docs/pricing#priority - verified 2026-05-09
 
 ## Windsurf (or v0)
 - Free: $0/user/month - https://windsurf.com/pricing - verified 2026-05-08
