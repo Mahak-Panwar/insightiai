@@ -6,22 +6,22 @@ export default function AuditForm2({ ai, register }) {
       {ai === "openai-api-direct" && (
         <>
          <label htmlFor="AI" className='grid gap-3 text-2xl'>2. Enter Usage Detail
-        <select  className='max-w-2xl bg-black/5  px-3 py-2 text-sm' {...register("gpt-type",{required:true })}>
+        <select  className='max-w-2xl bg-black/5 w-11/12 px-3 py-2 text-sm' {...register("plan",{required:true })}>
             <option value="">--Select Your Plan--</option>
-            <option value="GPT‑5.5-standard">GPT‑5.5(standard)</option>
-          <option value="GPT‑5.5(Batch -50%">GPT‑5.5(Batch -50%)</option>
-          <option value="GPT‑5.5(Data residency+10%)">GPT‑5.5(Data residency+10%)</option>
-          <option value="GPT‑5.4(standard)">GPT‑5.4(standard)</option>
-          <option value="GPT‑5.4(Batch -50%)">GPT‑5.4(Batch -50%)</option>
-          <option value="GPT‑5.4(Data residency+10%)">GPT‑5.4(Data residency+10%)</option>
-          <option value="GPT‑5.4 mini(standard)">GPT‑5.4 mini(standard)</option>
-          <option value="GPT‑5.4 mini(Batch -50%)">GPT‑5.4 mini(Batch -50%)</option>
-          <option value="GPT‑5.4 mini(Data residency+10%)">GPT‑5.4 mini(Data residency+10%)</option>
-          <option value="GPT‑Realtime‑2 (Text)">GPT‑Realtime‑2 (Text)</option>
-          <option value="GPT‑Realtime‑2 (Audio)">GPT‑Realtime‑2 (Audio)</option>
-          <option value="GPT‑Realtime‑2 (Image)">GPT‑Realtime‑2 (Image)</option>
-          <option value="GPT‑Image‑2(Image)">GPT‑Image‑2(Image)</option>
-          <option value="GPT‑Image‑2(Text)">GPT‑Image‑2(Text)</option>
+            <option value="gpt-5.5-standard">GPT‑5.5(standard)</option>
+          <option value="gpt-5.5-batch">GPT‑5.5(Batch -50%)</option>
+          <option value="gpt-5.5-residence">GPT‑5.5(Data residency+10%)</option>
+          <option value="gpt-5.4-standard">GPT‑5.4(standard)</option>
+          <option value="gpt-5.4-batch">GPT‑5.4(Batch -50%)</option>
+          <option value="gpt-5.4-residence">GPT‑5.4(Data residency+10%)</option>
+          <option value="gpt-5.4-mini-standard">GPT‑5.4 mini(standard)</option>
+          <option value="gpt-5.4-mini-batch">GPT‑5.4 mini(Batch -50%)</option>
+          <option value="gpt-5.4-mini-residence">GPT‑5.4 mini(Data residency+10%)</option>
+          <option value="gpt-realtime-2-text">GPT‑Realtime‑2 (Text)</option>
+          <option value="gpt-realtime-2-audio">GPT‑Realtime‑2 (Audio)</option>
+          <option value="gpt-realtime-2-image">GPT‑Realtime‑2 (Image)</option>
+          <option value="gpt-image-2-image">GPT‑Image‑2(Image)</option>
+          <option value="gpt-image-2-text">GPT‑Image‑2(Text)</option>
 
           </select>
           </label>
@@ -31,7 +31,7 @@ export default function AuditForm2({ ai, register }) {
       {ai === "github-copilot" && (
         <>
         <label htmlFor="AI" className='grid gap-3 text-2xl'>2. Enter Usage Detail
-        <select  className='max-w-2xl bg-black/5  px-3 py-2 text-sm' {...register("copilot-type",{required:true })} >
+        <select  className='max-w-2xl bg-black/5 w-11/12 px-3 py-2 text-sm' {...register("plan",{required:true })} >
             <option value="">--Select Your Plan--</option>
             <option value="basic">Basic</option>
           <option value="team">Team</option>
@@ -44,7 +44,7 @@ export default function AuditForm2({ ai, register }) {
       {ai === "gemini" && (
         <>
           <label htmlFor="AI" className='grid gap-3 text-2xl'>2. Enter Usage Detail
-        <select  className='max-w-2xl bg-black/5  px-3 py-2 text-sm' {...register("gemini-type",{required:true })}>
+        <select  className='max-w-2xl bg-black/5 w-11/12 px-3 py-2 text-sm' {...register("plan",{required:true })}>
             <option value="">--Select Your Plan--</option>
             <option value="free">Free</option>
           <option value="plus">Plus</option>
@@ -58,7 +58,7 @@ export default function AuditForm2({ ai, register }) {
       {ai === "gemini-api" && (
         <>
          <label htmlFor="AI" className='grid gap-3 text-2xl'>2. Enter Usage Detail
-        <select  className='max-w-2xl bg-black/5  px-3 py-2 text-sm' {...register("gemini-api-type",{required:true })}>
+        <select  className='max-w-2xl bg-black/5 w-11/12 px-3 py-2 text-sm' {...register("plan",{required:true })}>
             <option value="">--Select Your Plan--</option>
             <option value="standard">Standard</option>
           <option value="batch">Batch</option>
@@ -71,12 +71,12 @@ export default function AuditForm2({ ai, register }) {
       {ai === "cursor" && (
         <>
          <label htmlFor="AI" className='grid gap-3 text-2xl'>2. Enter Usage Detail
-        <select  className='max-w-2xl bg-black/5  px-3 py-2 text-sm'{...register("cursor-type",{required:true })}>
+        <select  className='max-w-2xl bg-black/5 w-11/12 px-3 py-2 text-sm'{...register("plan",{required:true })}>
             <option value="">--Select Your Plan--</option>
             <option value="hobby">Hobby</option>
           <option value="business">Business</option>
           <option value="pro">Pro</option> 
-          <option value="plus">Pro+</option>
+          <option value="pro+">Pro+</option>
           <option value="ultra">Ultra</option> 
           <option value="enterprise">Enterprise</option> 
           </select>
@@ -86,7 +86,7 @@ export default function AuditForm2({ ai, register }) {
       {ai === "claude" && (
         <>
           <label htmlFor="AI" className='grid gap-3 text-2xl'>2. Enter Usage Detail
-        <select  className='max-w-2xl bg-black/5  px-3 py-2 text-sm' {...register("claude-type",{required:true })}>
+        <select  className='max-w-2xl bg-black/5 w-11/12 px-3 py-2 text-sm' {...register("plan",{required:true })}>
             <option value="">--Select Your Plan--</option>
             <option value="free">Free</option>
           <option value="max">Max</option>
@@ -101,13 +101,16 @@ export default function AuditForm2({ ai, register }) {
       {ai === "chatgpt" && (
         <>
          <label htmlFor="AI" className='grid gap-3 text-2xl'>2. Enter Usage Detail
-        <select className='max-w-2xl bg-black/5  px-3 py-2 text-sm'  {...register("chatgpt-type",{required:true })}>
+        <select className='max-w-2xl bg-black/5 w-11/12 px-3 py-2 text-sm'  {...register("plan",{required:true })}>
             <option value="">--Select Your Plan--</option>
             <option value="free">Free</option>
           <option value="plus">Plus</option>
           <option value="pro">Pro</option> 
           <option value="go">Go</option>
           <option value="enterprise">Enterprise</option> 
+          <option value="enterprise">Enterprise</option> 
+          <option value="business-codex">Business Codex</option> 
+          <option value="business-chatgpt-codex">Business chatgpt codex</option> 
           </select>
           </label>
         </>
@@ -115,11 +118,11 @@ export default function AuditForm2({ ai, register }) {
       {ai === "anthropic-api-direct" && (
         <>
           <label htmlFor="AI" className='grid gap-3 text-2xl'>2. Enter Usage Detail
-        <select  className='max-w-2xl bg-black/5  px-3 py-2 text-sm' {...register("anthropic-api-type",{required:true })}>
+        <select  className='max-w-2xl bg-black/5 w-11/12 px-3 py-2 text-sm' {...register("plan",{required:true })}>
             <option value="">--Select Your Plan--</option>
-            <option value="claude-opus-4.7">Claude Opus 4.7</option>
-          <option value="claude-sonnet-4.6">Claude Sonnet 4.6</option>
-          <option value="claude-haiku-4.5">Claude Haiku 4.5</option>  
+            <option value="opus-4.7">Opus 4.7</option>
+          <option value="sonnet-4.6">Sonnet 4.6</option>
+          <option value="haiku-4.5">Haiku 4.5</option>  
           </select>
           </label>
         </>
@@ -128,7 +131,7 @@ export default function AuditForm2({ ai, register }) {
       {ai === "windsurf" && (
         <>
           <label htmlFor="AI" className='grid gap-3 text-2xl'>2. Enter Usage Detail
-        <select  className='max-w-2xl bg-black/5  px-3 py-2 text-sm' {...register("windsurf-type",{required:true })}>
+        <select  className='max-w-2xl bg-black/5 w-11/12 py-2 text-sm' {...register("plan",{required:true })}>
             <option value="">--Select Your Plan--</option>
             <option value="free">Free</option>
           <option value="max">Max</option>
@@ -141,59 +144,24 @@ export default function AuditForm2({ ai, register }) {
       )}
 
       {/* Default field for all */}
-    
-      {(ai.includes("openai") ||
-        ai.includes("anthropic") ||
-        ai.includes("gemini") ||
-        ai.includes("chatgpt") ||
-        ai.includes("claude") && ai.includes("api")) && (
-        <>
-          <label className="block font-medium">Tokens (per month)</label>
+          <label className="block font-medium">Seats (if applicable)</label>
+          <input
+            type="number"
+            placeholder="Enter number of seats"
+            {...register("seats")}
+            className='max-w-2xl  bg-black/5 w-11/12 px-3 py-2 text-sm'
+          />
+          <label className="block font-medium">Tokens (per month) if applicable</label>
           <input
             type="number"
             placeholder="Enter number of tokens"
-            {...register("tokens", { required: true })}
-            className='max-w-2xl bg-black/5  px-3 py-2 text-sm'
+            {...register("tokens")}
+            className='max-w-2xl bg-black/5 w-11/12 px-3 py-2 text-sm'
           />
-          </>
-          )}
 
-           {(ai.includes("copilot") ||
-        ai.includes("cursor") ||
-        ai.includes("windsurf") ||
-        ai.includes("claude") && ai.includes("team") ||
-        ai.includes("chatgpt") && ai.includes("business")) && (
-        <>
-          <label className="block font-medium">Seats</label>
-          <input
-            type="number"
-            placeholder="Enter number of seats"
-            {...register("seats", { required: true })}
-            className='max-w-2xl bg-black/5  px-3 py-2 text-sm'
-          />
-          </>
-        )}
-         {(ai.includes("claude")) ||
-        (ai.includes("chatgpt") && ai.includes("codex")) && (
-        <>
-          <label className="block font-medium">Seats</label>
-          <input
-            type="number"
-            placeholder="Enter number of seats"
-            {...register("seats", { required: true })}
-            className='max-w-2xl bg-black/5  px-3 py-2 text-sm'
-          />
-          <label className="block font-medium">Tokens (per month)</label>
-          <input
-            type="number"
-            placeholder="Enter number of tokens"
-            {...register("tokens", { required: true })}
-            className='max-w-2xl bg-black/5  px-3 py-2 text-sm'
-          />
-        </>
-      )}
+
   <label className="block font-medium">Primary use case</label>
-     <select {...register("primary-use-case",{required:true })} className='max-w-2xl bg-black/5 px-3 py-2 text-sm'>
+     <select {...register("primary_use_case",{required:true })} className='max-w-2xl bg-black/5 px-3 py-2 text-sm w-11/12'>
         <option value="" >--What You do the most with it--</option>
             <option value="coding">coding</option>
           <option value="writing">Writing</option>
@@ -206,7 +174,7 @@ export default function AuditForm2({ ai, register }) {
           <input
             type="number"
             placeholder="Monthly Spend ($)"
-            {...register("spend", { required: true })} className='max-w-2xl bg-black/5  px-3 py-2 text-sm'
+            {...register("spend", { required: true })} className='max-w-2xl bg-black/5 w-11/12 px-3 py-2 text-sm'
           />
       </label>
     </div>

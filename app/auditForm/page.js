@@ -1,9 +1,13 @@
 "use client"
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form';
 import AuditForm2 from '@/components/auditform';
+import pricingData from "@/pricing.json";
+import { AuditSpend } from '@/function/auditSpend';
+import AuditResult from '@/components/Auditresult';
 
 const AuditForm = () => {
+    const [result, setResult] = useState(null);
   const {
     register,
     handleSubmit,
@@ -13,9 +17,13 @@ const AuditForm = () => {
 
   const APIchoice = watch("AI"); // updates immediately when select changes
 
-  const onSubmit = (data) => {
-    console.log("Form submitted:", data);
-  };
+
+  const onSubmit =  (data) => {
+ const auditResult = AuditSpend(data);
+ console.log("AuditResult",auditResult)
+    setResult(auditResult);
+  
+}
 
   return (
     <div className='w-4/5 my-24  bg-white shadow-md  px-8 py-12 rounded-2xl '>
@@ -39,10 +47,12 @@ const AuditForm = () => {
 </label>
         {/* Render child form immediately when a value is selected */}
         
-        {APIchoice && <AuditForm2 ai={APIchoice} register={register} />}
+         <AuditForm2 ai={APIchoice} register={register} />
 
         <button type="submit" className='bg-blue-400 px-3.5 py-2 rounded-lg mx-auto'>Submit</button>
       </form>
+      {/* Result Card */}
+      {result && <AuditResult result={result} />}
     </div>
   )
 }

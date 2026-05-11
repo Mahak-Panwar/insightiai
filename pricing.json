@@ -1,0 +1,78 @@
+{
+  "cursor": {
+    "hobby": { "price": 0, "unit": "user/month" },
+    "pro": { "price": 20, "unit": "user/month" },
+    "pro+": { "price": 60, "unit": "user/month" },
+    "ultra": { "price": 200, "unit": "user/month" },
+    "business": { "price": 40, "unit": "user/month" },
+    "enterprise": { "price": null, "unit": "contact sales" }
+  },
+  "github-copilot": {
+    "basic": { "price": 0, "unit": "user/month" },
+    "team": { "price": 4, "unit": "user/month" },
+    "enterprise": { "price": 21, "unit": "user/month" }
+  },
+  "claude": {
+    "free": { "price": 0, "unit": "month" },
+    "pro": { "price": 17, "unit": "month" },
+    "max": { "price": 100, "unit": "month" },
+    "team-standard": { "price": 25, "unit": "user/month" },
+    "team-premium": { "price": 125, "unit": "user/month" },
+    "enterprise": { "seat": 20, "usage": "api rates", "unit": "seat+usage" },
+    "api": {
+      "opus": { "input": 5, "output": 25, "unit": "per million tokens" },
+      "sonnet": { "input": 3, "output": 15, "unit": "per million tokens" },
+      "haiku": { "input": 1, "output": 5, "unit": "per million tokens" }
+    }
+  },
+  "chatgpt": {
+    "free": { "price": 0, "unit": "month" },
+    "go": { "price": 4.22, "unit": "month" },
+    "plus": { "price": 21.13, "unit": "month" },
+    "pro": { "price": 113.11, "unit": "month" },
+    "business-chatgpt-codex": { "price": 19.03, "unit": "user/month" },
+    "business-codex": { "price": null, "unit": "custom" },
+    "enterprise": { "price": null, "unit": "contact sales" },
+    "api": { "price": null, "unit": "per million tokens" }
+  },
+  "anthropic-api": {
+    "opus-4.7": { "input": 5, "output": 25, "unit": "per million tokens" },
+    "sonnet-4.6": { "input": 3, "output": 15, "unit": "per million tokens" },
+    "haiku-4.5": { "input": 1, "output": 5, "unit": "per million tokens" }
+  },
+  "openai-api": {
+    "gpt-5.5-standard": { "input": 5, "cached": 0.5, "output": 30 },
+    "gpt-5.5-batch": { "input": 2.5, "cached": 0.25, "output": 15 },
+    "gpt-5.5-residence": { "input": 5.5, "cached": 0.55, "output": 33 },
+    "gpt-5.4-standard": { "input": 2.5, "cached": 0.25, "output": 15 },
+    "gpt-5.4-batch": { "input": 1.25, "cached": 0.125, "output": 0.125 },
+    "gpt-5.4-residence": { "input": 2.75, "cached": 0.275, "output": 15 },
+    "gpt-5.4-mini-standard": { "input": 0.75, "cached": 0.075, "output": 4.5 },
+    "gpt-5.4-mini-batch": { "input": 0.375, "cached": 0.075, "output": 4.5 },
+    "gpt-5.4-mini-residence": { "input": 0.825, "cached": 0.00825, "output": 4.95 },
+    "gpt-realtime-2-text": { "input": 4, "cached": 0.4, "output": 24 },
+    "gpt-realtime-2-audio": { "input": 32, "cached": 0.4, "output": 64 },
+    "gpt-realtime-2-image": { "input": 5, "cached": 0.5 },
+    "gpt-image-2-image": { "input": 8, "cached": 2, "output": 30 },
+    "gpt-image-2-text": { "input": 5, "cached": 2 }
+  },
+  "gemini": {
+    "free": { "price": 0, "unit": "user/month" },
+    "plus": { "price": 7.99, "unit": "user/month" },
+    "pro": { "price": 19.99, "unit": "user/month" },
+    "ultra": { "price": 259.99, "unit": "month" },
+    "api": {
+      "standard": { "input": 0.25, "output": 1.5, "unit": "per million tokens", "free": "50 requests/day" },
+      "batch": { "input": 0.20, "output": 1.2, "unit": "per million tokens", "free": "100K tokens/month" },
+      "flex": { "input": 0.30, "output": 1.8, "unit": "per million tokens", "free": "10K tokens/month" },
+      "priority": { "input": 0.40, "output": 2.0, "unit": "per million tokens", "free": "5K tokens/month" }
+    }
+  },
+  "windsurf": {
+    "free": { "price": 0, "unit": "user/month" },
+    "pro": { "price": 20, "unit": "user/month" },
+    "max": { "price": 200, "unit": "user/month" },
+    "teams": { "price": 40, "unit": "user/month" },
+    "enterprise": { "price": null, "unit": "contact sales" }
+  }
+}
